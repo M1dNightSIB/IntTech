@@ -5,6 +5,14 @@
     <title>Лабораторная работа 1.2 
     </title>
     <style>
+      ol{
+        list-style: none;
+        counter-reset: li;
+      }
+      li:before{
+        counter-increment: li;
+        content: counter(li, ".")" .";
+      }
       h2{
 	-webkit-text-stroke: 1px #a74b596;
         color: #F00000;
@@ -26,39 +34,39 @@
             <li> Предметы преподаваемые на втором курсе
               <ol>
                 <li> Математический анализ
-                  <ul type=square>
+                  <ol type=square>
                     <li> Теория
                     <li> Практика
-                  </ul>
+                  </ol>
                 <li> Интернет технологии
                   <ul type=square>
                     <li> Теория
                     <li> Практика
                   </ul>
                 <li> ООП
-                  <ul type=square>
+                  <ol type=square>
                     <li> Теория
                     <li> Практика
-                  </ul>
+                  </ol>
                 <li> Информатика
-                  <ul type=square>
+                  <ol type=square>
                     <li> Теория
                     <li> Практика
-                  </ul>
+                  </ol>
                 <li> Экономика
-                  <ul type=square>
+                  <ol type=square>
                     <li> Теория
                     <li> Практика
-                  </ul>
+                  </ol>
                 <li> Физкультура
-                  <ul type=square>
+                  <ol type=square>
                     <li> Практика
                   </ul>
                 <li> СиАОД
-                  <ul type=square>
+                  <ol type=square>
                     <li> Теория
                     <li> Практика
-                  </ul>
+                  </ol>
               </ol>
           </ul>
         </tt>
