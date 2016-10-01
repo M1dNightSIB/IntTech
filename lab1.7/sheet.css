@@ -1,0 +1,63 @@
+
+    body > *, body{
+	margin-top: 1em;
+	margin-bottom: 1em;
+    margin-left: 60pt;
+    margin-right: 25pt;
+	background: #C0C0C0;
+	color: black;
+	font-family: Arial;
+	text-align: justify; 
+	
+	}
+  A {color: maroon; } /*гиперссылка*/
+  A:visited {color: green;}/*псевдокласс для посещенной гиперссылки*/
+  p{
+    font: 12pt times;
+    padding-top:5pt;/*отступ сверху*/
+	padding-bottom:5pt;/*отступ снизу*/
+    padding-left:30pt;/*отступ слева*/
+	padding-right:30pt;/*отступ справа*/
+    background: #FFFFFF;/*фон*/
+	text-indent: 4em;/*величина отступа первой строки*/
+	line-height: 1.5em;/*межстрочный интервал*/
+  }
+  p:nth-child(3){
+    border-left:5px solid red;
+  }
+  p:nth-child(5){
+    border-right:5px double blue;
+  }
+  h2{
+  text-align:center;
+  }
+  h2:nth-child(1){
+    font-size:24pt;
+	color:black;
+  }
+  h2:nth-child(2){
+    margin-top:-54pt;
+	margin-left:58pt;
+    font-size:24pt;
+	color:blue;
+	
+  }
+  i b{
+  letter-spacing:5pt;
+  }
+  
+  span{
+  font-family: times;
+  font-size:16pt;
+  color:Yellow;
+  text-decoration: underline overline; 
+  display:inline-block;
+  text-align: center;
+  padding-top:15pt;
+  padding-bottom:15pt;
+  padding-left:10pt;
+  padding-right:10pt;
+  background: green;
+  }
+
+
