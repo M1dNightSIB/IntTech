@@ -7,8 +7,8 @@ function set_image()
 {   
     d=document;
     t=d.a1.src; 
-    d.a1.src= d.a2.src;
-	d.a2.src = t;
+    document.a1.src= d.a2.src;
+	document.a2.src = t;
 }
 </script>
 </HEAD> 
@@ -17,8 +17,8 @@ function set_image()
 
   <form>
   <p>
-  <img name="a1" src="img/lolg.jpg" width="250"><Br>
-  <img name="a2" src="img/dota2.jpg" width="250"><Br>
+  <img name="a1" src="zlo.jpg" width="250"><Br>
+  <img name="a2" src="zlo2.jpg" width="250"><Br>
   <p><input type="button" value="Обменять" style="width:150px; height:40px" onClick="set_image()">
   </p>
  </form>

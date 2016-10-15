@@ -2,6 +2,11 @@
 <HTML><HEAD>
 <META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=UTF-8">
 <TITLE>Лаборторная 2.2</TITLE>
+<style>
+    .cl{
+    transform: scalex(-1);
+}
+    </style>
 <script>
 n=1;delay=100;k=1;
 var id;
@@ -45,18 +50,11 @@ clearTimeout(id1);
   <input type="button" value="Медленнее" style="width:150px; height:40px" onClick="delay=delay+25">
   </p>
  </form>
- 
+ <br>
  <form>
   <p>
-  <img name="a2" src="HTML_Book-2016/HTML/JAVA/works/lab2.2_files/s1.gif" width="400" height="60"><Br>
+  <img name="a2" class ="cl" src="HTML_Book-2016/HTML/JAVA/works/lab2.2_files/s1.gif" width="400" height="60"><Br>
   <p>
   <input type="button" value="Старт" style="width:150px; height:40px" onClick="b1(); f();">
   <input type="button" value="Стоп" style="width:150px; height:40px" onClick="b1();">
-  <input type="button" value="Быстрее" style="width:150px; height:40px" onClick="delay=delay-25">
-  <input type="button" value="Медленнее" style="width:150px; height:40px" onClick="delay=delay+25">
-  </p>
- </form>
-
-</BODY>
-</HTML>
-
+  <input 

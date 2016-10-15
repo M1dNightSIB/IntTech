@@ -1,0 +1,74 @@
+<!DOCTYPE HTLM PUBLIC "-/IETF//DTD HTML 3.2//RU>
+<html>
+    <head>
+        <meta HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset = UTF-8;">
+        <title>Лабораторная 2.2</title>
+        <style>
+            .sclx{
+                transform: scalex(-1);
+            }
+            .rtt{
+                transform: rotate(9deg);
+            }
+            body{
+                background: url(snow.jpg);                                               
+            }
+        </style>
+        <script>
+            n = 1;
+            delay = 150;
+            delay1 = 150;
+            k = 1;
+            var id;
+            var id1;
+            function start(){
+                n = n+1;
+                if(n==12)
+                    n = 1
+                document.a1.src="HTML_Book-2016/HTML/JAVA/works/lab2.2_files/s"+n+".gif";
+                id=setTimeout('start()', delay); 
+            }
+            function tm(){
+                clearTimeout(id)
+            }
+            function reversestart(){
+                k=k+1;
+                if(k==12)
+                    k=1;
+                document.a2.src="HTML_Book-2016/HTML/JAVA/works/lab2.2_files/s"+k+".gif";
+                id1=setTimeout('reversestart()', delay1);
+            }
+            function tm1(){
+                clearTimeout(id1)
+            }
+        </script>
+    </head>
+    <body bgcolor ="white" text = "black" link = "blue" alink = "red" vlink = "green">
+       <form> 
+        <p><br>
+            <img name = "a1" class="rtt" src = "HTML_Book-2016/HTML/JAVA/works/lab2.2_files/s1.gif" width = "400" height="60"><br>
+         <p>
+             <br><br>
+             <input type="button" value="Start" style="width:150px; height=40px" onclick="tm(); start();">
+             <input type="button" value="Stop" style="width:150px; height=40px" onclick="tm();">
+             <input type="button" value="Faster" style="width:150px; height=40px" onclick="delay=delay-15;">
+             <input type="button" value="Slower" style="width:150px; height=40px" onclick="delay=delay+15;">
+         </p>
+        </p>
+        </form>
+        <br><br>
+        <form>
+            <p>
+                
+                <img name="a2" class="sclx" src="HTML_Book-2016/HTML/JAVA/works/lab2.2_files/s1.gif" width="400" height="60"><br>
+                
+                <p><br><br>
+            <input type="button" value="Start" style="width:150px; height=40px" onclick="tm1(); reversestart();">
+            <input type="button" value="Stop" style="width:150px; height=40px" onclick="tm1();">
+            <input type="button" value="Faster" style="width:150px; height=40px" onclick="delay1=delay1-15;">
+            <input type="button" value="Slower" style="width:150px; height=40px" onclick="delay1=delay1+15;">
+                </p>           
+            </p>
+        </form>
+    </body>
+</html>

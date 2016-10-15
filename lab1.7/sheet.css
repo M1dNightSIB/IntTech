@@ -46,11 +46,11 @@
   letter-spacing:5pt;/*интервал между символами*/
   }
   
-  span{/*сетинги 2 заголовка*/
+  #st{/*сеттинги 2 заголовка*/
   font-family: times;
   font-size:16pt;
   color:Yellow;
-  text-decoration: underline overline; 
+  text-decoration: underline overline;
   display:inline-block;
   text-align: center;
   padding-top:15pt;
@@ -60,4 +60,23 @@
   background: green;
   }
 
+.p1 {
+	text-indent: 1em;
+	color: red;
+	font-family: Arial;	
+	font-size: 16pt;
+	word-spacing: 0em;  
+}
 
+.p2 {
+	color: blue;
+	font-family: Times;
+	font-size: 9pt;
+	text-indent: 0em;
+}
+.p3 {
+	color: indigo;
+	font-family: monospace;
+	font-size: 18pt;
+	text-indent: 0em;
+}
