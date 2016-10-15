@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.2//RU">
+<HTML><HEAD>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=UTF-8">
+<TITLE>Лабораторная 2.1</TITLE>
+<script language="JavaScript">
+function set_image()
+{   
+    d=document;
+    t=d.a1.src; 
+    d.a1.src= d.a2.src;
+	d.a2.src = t;
+}
+</script>
+</HEAD> 
+
+<BODY BGCOLOR="white" TEXT="black" LINK="blue" ALINK="red" VLINK="green"  >
+
+  <form>
+  <p>
+  <img name="a1" src="img/lolg.jpg" width="250"><Br>
+  <img name="a2" src="img/dota2.jpg" width="250"><Br>
+  <p><input type="button" value="Обменять" style="width:150px; height:40px" onClick="set_image()">
+  </p>
+ </form>
+</BODY>
+</HTML>
+

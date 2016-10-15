@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.2//RU">
+<HTML><HEAD>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=Windows-1251">
+<TITLE>Лабораторная 2.4</TITLE>
+
+<STYLE>
+img{
+cursor:hand;
+}  
+</STYLE>
+<script>
+var c;
+function a(){
+document.images[0].width=document.images[0].width+2;
+id=setTimeout('a()', 30);
+clearTimeout(id1);
+}
+function b(){
+clearTimeout(id);
+if(c<document.images[0].width){
+document.images[0].width=document.images[0].width-2;
+id1=setTimeout('b()', 30);}
+}
+
+
+
+
+</script>
+
+</HEAD> 
+
+<BODY TEXT="black" LINK="blue" ALINK="red" VLINK="blue"  >
+
+
+<img src="img/dota2.jpg" width="250" onMouseOver=" a();" onMouseOut="b();" >
+<script>c=document.images[0].width;</script>
+
+
+
+
+
+  
+
+</BODY>
+</HTML>
+

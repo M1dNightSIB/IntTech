@@ -23,19 +23,19 @@
 	line-height: 1.5em;/*межстрочный интервал*/
   }
   p:nth-child(3){
-    border-left:5px solid red;
+    border-left:5px solid red;/*отступ слева и стиль границы*/
   }
   p:nth-child(5){
-    border-right:5px double blue;
+    border-right:5px double blue;/*отступ слева и стиль границы*/
   }
   h2{
-  text-align:center;
+  text-align:center;/*текст по центру*/
   }
-  h2:nth-child(1){
+  h2:nth-child(1){/*размер шрифта + цвет*/
     font-size:24pt;
 	color:black;
   }
-  h2:nth-child(2){
+  h2:nth-child(2){/*настройки первого заголовка +"тень"*/
     margin-top:-54pt;
 	margin-left:58pt;
     font-size:24pt;
@@ -43,10 +43,10 @@
 	
   }
   i b{
-  letter-spacing:5pt;
+  letter-spacing:5pt;/*интервал между символами*/
   }
   
-  span{
+  span{/*сетинги 2 заголовка*/
   font-family: times;
   font-size:16pt;
   color:Yellow;

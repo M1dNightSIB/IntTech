@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.2//RU">
+<HTML><HEAD>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=Windows-1251">
+<TITLE>Лабораторная 2.3</TITLE>
+<STYLE>
+img{
+position:absolute; 
+cursor:hand;
+}  
+</STYLE>
+</HEAD> 
+
+<BODY BGCOLOR="#00BBBB" TEXT="black" LINK="blue" ALINK="red" VLINK="blue"  >
+<h1 align=center>Собери Мазаику!</h2>
+<p>Перемещая картинки мышкой нужно собрать рисунок.</p>
+<img src="HTMLbook_2014/HTML/Java/works/lab2.3_files/r1.gif" STYLE="top:110; left:10;">
+<img src="HTMLbook_2014/HTML/Java/works/lab2.3_files/r2.gif" STYLE="top:110; left:110;">
+<img src="HTMLbook_2014/HTML/Java/works/lab2.3_files/r3.gif" STYLE="top:280; left:10;">
+<img src="HTMLbook_2014/HTML/Java/works/lab2.3_files/r4.gif" STYLE="top:280; left:110;">
+
+
+<script>
+flag=0;
+var x,y,xx,yy;
+j=1000;
+e=window.event;
+var i;
+for(i=2;i<6;i++){
+document.body.children[i].onmousedown=function(e){
+flag=1;
+y=e.pageY;
+x=e.pageX;
+xx=parseInt( this.style.top,10);
+yy=parseInt( this.style.left,10);
+this.style.zIndex = j++;
+};
+document.body.children[i].onmousemove=function(e){
+if(flag==1){
+this.style.top=xx+e.pageY-y;
+this.style.left=yy+e.pageX-x;
+}
+};
+document.body.children[i].onmouseup=function(e){
+flag=0;
+this.style.zIndex = j-1;
+};
+document.body.children[i].ondragstart=function() {
+  return false;
+};
+}
+
+</script>
+
+
+  
+
+</BODY>
+</HTML>
+

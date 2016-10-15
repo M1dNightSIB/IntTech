@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.2//RU">
+<HTML><HEAD>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=UTF-8">
+<TITLE>Лаборторная 2.2</TITLE>
+<script>
+n=1;delay=100;k=1;
+var id;
+var id1;
+function a()
+{
+    n=1+n%12;
+    document.a1.src="HTML_Book-2016/HTML/JAVA/works/lab2.2_files/s"+n+".gif";
+	id=setTimeout('a()', delay);
+}
+function b()
+{
+clearTimeout(id);
+}
+
+
+function f()
+{  
+   k=k-1;
+   if(k==0) k=12;
+   document.a2.src="HTML_Book-2016/HTML/JAVA/works/lab2.2_files/s"+k+".gif";
+   id1=setTimeout('f()', delay);
+}
+function b1()
+{
+clearTimeout(id1);
+}
+
+</script>
+</HEAD> 
+
+<BODY BGCOLOR="white" TEXT="black" LINK="blue" ALINK="red" VLINK="green"  >
+
+  <form>
+  <p>
+  <img name="a1" src="HTML_Book-2016/HTML/JAVA/works/lab2.2_files/s1.gif" width="400" height="60"><Br>
+  <p>
+  <input type="button" value="Старт" style="width:150px; height:40px" onClick="b(); a();">
+  <input type="button" value="Стоп" style="width:150px; height:40px" onClick="b();">
+  <input type="button" value="Быстрее" style="width:150px; height:40px" onClick="delay=delay-25">
+  <input type="button" value="Медленнее" style="width:150px; height:40px" onClick="delay=delay+25">
+  </p>
+ </form>
+ 
+ <form>
+  <p>
+  <img name="a2" src="HTML_Book-2016/HTML/JAVA/works/lab2.2_files/s1.gif" width="400" height="60"><Br>
+  <p>
+  <input type="button" value="Старт" style="width:150px; height:40px" onClick="b1(); f();">
+  <input type="button" value="Стоп" style="width:150px; height:40px" onClick="b1();">
+  <input type="button" value="Быстрее" style="width:150px; height:40px" onClick="delay=delay-25">
+  <input type="button" value="Медленнее" style="width:150px; height:40px" onClick="delay=delay+25">
+  </p>
+ </form>
+
+</BODY>
+</HTML>
+
